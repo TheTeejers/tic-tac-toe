@@ -1,8 +1,33 @@
+.body {
+  text-align: center;
+  align-items: center;
+
+}
+
 #board {
   margin-top: 10px;
 }
 
 .box {
-  border: 1px solid black;
+  border: 5px solid black;
   height: 150px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
 }
+
+.resetButton {
+  display: block;
+  margin: 20px;
+  padding: auto 50%;
+}
+
+.button{
+
+}
+/*h1 {
+  color: blue;
+}
+*/
+
+
