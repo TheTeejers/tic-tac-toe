@@ -7,21 +7,21 @@
 
 // ...document.addEventListener("DOMContentLoaded", function(event) {
 //     console.log("DOM fully loaded and parsed");
-//   });
+  });
 
-// change text, text color, background color in boxes when clicking in single box
-// var plays = [...document.querySelectorAll('.box')];
-//   plays.forEach(function(clickedBox) {
-//     clickedBox.addEventListener('click', changeText);
-//       function changeText(event) {
-//         clickedBox.innerText = 'X';
-//         clickedBox.style.color = 'white';
-//         clickedBox.style.backgroundColor = 'blue';
-//       // console.log(event);
-//       }
-//   });
+change text, text color, background color in boxes when clicking in single box
+var plays = [...document.querySelectorAll('.box')];
+  plays.forEach(function(clickedBox) {
+    clickedBox.addEventListener('click', changeText);
+      function changeText(event) {
+        clickedBox.innerText = 'X';
+        clickedBox.style.color = 'white';
+        clickedBox.style.backgroundColor = 'blue';
+      // console.log(event);
+      }
+  });
 
-// after each click change player and what is put in each box
+after each click change player and what is put in each box
 
 
 

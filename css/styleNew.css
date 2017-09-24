@@ -10,6 +10,7 @@ body {
 
 
 table {
+  table-layout: fixed;
   margin: auto;
   border-color: #4C4AFF;
   text-shadow: 3px 3px 6px #4C4AFF;
@@ -18,15 +19,15 @@ table {
 }
 
 h1 {
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #4C4AFF;
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 100px;
 }
 
 .box {
   height: 80px;
-  width: 250px;
-  font-size: 30px;
+  width: 80px;
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
   font-family: 'Fredericka the Great', cursive;

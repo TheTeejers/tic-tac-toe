@@ -1,11 +1,8 @@
 // console.log("I think it works!")
-
-
-function start(){
-  document.turn = 'EX';
+  var count = 0;
+  var turn = 'EX';
   document.winner = null;
-  changeMessage(document.turn + " get's to start the game! Now GO!!!")
-};
+  changeMessage(turn + " get's to start the game! Now GO!!!")
 
 function changeMessage (message) {
   document.getElementById("message").innerText=message;
@@ -13,10 +10,10 @@ function changeMessage (message) {
 
 function nextMove(box){
   if(document.winner != null) {
-    changeMessage("Calm down! " + document.turn + " already won!!!")
+    changeMessage("Calm down! " + turn + " already won!!!")
   } else
   if(box.innerText == '') {
-      box.innerText=document.turn;
+      box.innerText=turn;
   nextPlayer();
   }else{
     changeMessage('Pick an EMPTY box, genius!')
@@ -24,16 +21,27 @@ function nextMove(box){
 }
 
 function nextPlayer(){
-if(didYouWin(document.turn)) {
-  changeMessage(document.turn + " gets the chicken dineer!!!")
-  document.winner = document.turn;
-} else
-  if(document.turn == 'EX'){
-    document.turn = 'OH';
-      changeMessage("It is now " + document.turn + "'s turn to play!")
+  count++;
+  console.log('count: '+count);
+if(didYouWin(turn)) {
+  changeMessage(turn + " gets the chicken dineer!!!")
+  document.winner = turn;
+}
+else if(count==9){
+  //check for draw
+    changeMessage("win? lose? DRAW!!!");
+}
+//else if(turn == 'EX'){
+  else{
+  turn = (turn == 'EX') ? 'OH' : 'EX';
+   // turn = 'OH';
+      changeMessage("It is now " + turn + "'s turn to play!")
+  /*
   } else {
-    document.turn = 'EX';
-      changeMessage("It is now " + document.turn + "'s turn to play!")
+    turn = 'EX';
+      changeMessage("It is now " + turn + "'s turn to play!")
+      */
+
   }
 }
 
@@ -51,6 +59,7 @@ function didYouWin (move) {
     }
     return result;
 }
+
 
 function checkRow (a, b, c, move){
   var result = false;
