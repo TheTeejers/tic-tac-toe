@@ -1,0 +1,47 @@
+
+
+body {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  background-color: #0D0D2B;
+  color: #4C4AFF;
+}
+
+
+table {
+  margin: auto;
+  border-color: #4C4AFF;
+  text-shadow: 3px 3px 6px #4C4AFF;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+h1 {
+  border-bottom: 2px solid #000000;
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 100px;
+}
+
+.box {
+  height: 80px;
+  width: 250px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+#message {
+  font-size: 30px;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.button {
+font-family: 'Love Ya Like A Sister', cursive;
+font-size: 25px;
+outline: none;
+background-color: #4C4AFF;
+
+}
+
