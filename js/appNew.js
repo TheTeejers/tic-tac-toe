@@ -32,17 +32,25 @@ if(didYouWin(turn)) {
   document.getElementById("box").style.backgroundRepeat = "no-repeat";
   document.getElementById("box").style.backgroundPosition = "center";
   document.getElementById("box").style.backgroundColor = "#000000";
+  document.body.style.backgroundImage = "url(images/balloons.gif)";
+  document.body.style.backgroundSize = "100% 100%";
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundRepeat = "no-repeat";
   document.winner = turn;
 }
 else if(count==9){
 
     changeMessage("win? lose? DRAW!!!");
     document.getElementById("message").style.color = "#ff0000";
-    document.getElementById("box").style.backgroundImage = "url(images/nowinner.gif)";
-    document.getElementById("box").style.backgroundSize = "100%";
-    document.getElementById("box").style.backgroundRepeat = "no-repeat";
-    document.getElementById("box").style.backgroundPosition = "center";
-    document.getElementById("box").style.backgroundColor = "#000000";
+    // document.getElementById("box").style.backgroundImage = "url(images/nowinner.gif)";
+    // document.getElementById("box").style.backgroundSize = "100%";
+    // document.getElementById("box").style.backgroundRepeat = "no-repeat";
+    // document.getElementById("box").style.backgroundPosition = "center";
+    // document.getElementById("box").style.backgroundColor = "#000000";
+    document.body.style.backgroundImage = "url(images/nowinner.gif)";
+    document.body.style.backgroundSize = "100% 100%";
+    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundRepeat = "no-repeat";
 }
 
   else{

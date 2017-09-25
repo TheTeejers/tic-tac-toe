@@ -1,12 +1,15 @@
 
 
 body {
-  width: 500px;
-  margin: auto;
+  width: 550px;
+  margin: 150px auto;
   text-align: center;
-  background-color: #0D0D2B;
+  /*background-color: #0D0D2B;*/
   color: #4C4AFF;
-/*  background-image: url(../images/nowinner.gif);*/
+  background-image: url(../images/sky.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   text-shadow:
     -2px -2px 0 #000,
     2px -2px 0 #000,
@@ -18,7 +21,7 @@ body {
 
 table {
   table-layout: fixed;
-  margin: auto;
+  margin: 25px auto;
   border-color: #4C4AFF;
   text-shadow: 3px 3px 6px #4C4AFF;
   color: #ffffff;
@@ -27,6 +30,8 @@ table {
 }
 
 h1 {
+  margin-top: 50px;
+  margin-bottom: 0;
   border-bottom: 2px solid #4C4AFF;
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 100px;
@@ -42,16 +47,23 @@ h1 {
 }
 
 #message {
+  margin: 25px;
   font-size: 30px;
   font-family: 'Love Ya Like A Sister', cursive;
-  text-shadow:
+/*  text-shadow:
     -2px -2px 0 #000,
     2px -2px 0 #000,
     -2px 2px 0 #000,
-    2px 2px 0 #000;
+    2px 2px 0 #000;*/
+}
+
+.resetButton {
+  margin-top: 75px;
 }
 
 .button {
+margin-top: 10px;
+margin-bottom: 75px;
 font-family: 'Love Ya Like A Sister', cursive;
 font-size: 25px;
 outline: none;
@@ -62,7 +74,7 @@ border-radius: 5px;
 
 button:hover {
   background: rgba(0,0,0,0);
-  color: #ffffff;
+  color: #000000;
   box-shadow: inset 0 0 0 3px #3a7999;
   transform: skew(-10deg);
 }
@@ -71,10 +83,10 @@ button:hover {
   /*box-shadow: inset 3px;*/
   /*border-color: #4C4AFF;*/
   /*outline-color: #4C4AFF;*/
-  transition:all 200ms ease;
-  background: url(../images/inBox2.gif);
+  transition:all 300ms ease;
+  background-color: rgba(0,149,255, 0.25);
   background-size: cover;
-  animation: bounce 0.75s;
+  animation: bounce 0.25s;
   color:red;
 }
 
@@ -98,19 +110,19 @@ button:hover {
     transform: translateY(0);
   }
   20% {
-    transform: translateX(-5px);
+    transform: translateX(-2px);
   }
 
   40% {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
   }
 
   60% {
-    transform: translateX(5px);
+    transform: translateX(2px);
   }
 
   80% {
-    transform: translateY(30px);
+    transform: translateY(2px);
   }
 }
 
