@@ -1,4 +1,4 @@
-// console.log("I think it works!")
+
   var count = 0;
   var turn = 'EX';
   document.winner = null;
@@ -26,35 +26,28 @@ function nextPlayer(){
   console.log('count: '+count);
 if(didYouWin(turn)) {
   changeMessage(turn + " gets the chicken dinner!!!");
-  // // document.body.style.background = "url(images/winner.gif)";
-  // document.body.style.backgroundSize = "cover";
-  // document.body.style.height = "100%";
   document.getElementById("message").style.color = "#00ff99";
-  document.getElementById("box").style.background = "url(images/winner.gif)";
-  document.getElementById("box").style.backgroundSize = "cover";
+  document.getElementById("box").style.backgroundImage = "url(images/winner.gif)";
+  document.getElementById("box").style.backgroundSize = "100%";
+  document.getElementById("box").style.backgroundRepeat = "no-repeat";
+  document.getElementById("box").style.backgroundPosition = "center";
+  document.getElementById("box").style.backgroundColor = "#000000";
   document.winner = turn;
 }
 else if(count==9){
-  //check for draw
-    changeMessage("win? lose? DRAW!!!");
-    // document.body.style.background = "url(images/nowinner.gif)";
-    // document.body.style.backgroundSize = "cover";
-    document.getElementById("message").style.color = "#ff0000";
-    document.getElementById("box").style.background = "url(images/nowinner.gif)";
-    document.getElementById("box").style.backgroundSize = "inherit";
 
+    changeMessage("win? lose? DRAW!!!");
+    document.getElementById("message").style.color = "#ff0000";
+    document.getElementById("box").style.backgroundImage = "url(images/nowinner.gif)";
+    document.getElementById("box").style.backgroundSize = "100%";
+    document.getElementById("box").style.backgroundRepeat = "no-repeat";
+    document.getElementById("box").style.backgroundPosition = "center";
+    document.getElementById("box").style.backgroundColor = "#000000";
 }
-//else if(turn == 'EX'){
+
   else{
   turn = (turn == 'EX') ? 'OH' : 'EX';
-   // turn = 'OH';
       changeMessage("It is now " + turn + "'s turn to play!")
-  /*
-  } else {
-    turn = 'EX';
-      changeMessage("It is now " + turn + "'s turn to play!")
-      */
-
   }
 }
 
