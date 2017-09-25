@@ -2,7 +2,8 @@
   var count = 0;
   var turn = 'EX';
   document.winner = null;
-  changeMessage(turn + " get's to start the game! Now GO!!!")
+  changeMessage(turn + " get's to start the game! Now GO!!!");
+
 
 function changeMessage (message) {
   document.getElementById("message").innerText=message;
@@ -24,12 +25,24 @@ function nextPlayer(){
   count++;
   console.log('count: '+count);
 if(didYouWin(turn)) {
-  changeMessage(turn + " gets the chicken dineer!!!")
+  changeMessage(turn + " gets the chicken dinner!!!");
+  // // document.body.style.background = "url(images/winner.gif)";
+  // document.body.style.backgroundSize = "cover";
+  // document.body.style.height = "100%";
+  document.getElementById("message").style.color = "#00ff99";
+  document.getElementById("box").style.background = "url(images/winner.gif)";
+  document.getElementById("box").style.backgroundSize = "cover";
   document.winner = turn;
 }
 else if(count==9){
   //check for draw
     changeMessage("win? lose? DRAW!!!");
+    // document.body.style.background = "url(images/nowinner.gif)";
+    // document.body.style.backgroundSize = "cover";
+    document.getElementById("message").style.color = "#ff0000";
+    document.getElementById("box").style.background = "url(images/nowinner.gif)";
+    document.getElementById("box").style.backgroundSize = "inherit";
+
 }
 //else if(turn == 'EX'){
   else{

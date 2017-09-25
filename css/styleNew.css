@@ -6,7 +6,14 @@ body {
   text-align: center;
   background-color: #0D0D2B;
   color: #4C4AFF;
+/*  background-image: url(../images/nowinner.gif);*/
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
+
 
 
 table {
@@ -15,7 +22,8 @@ table {
   border-color: #4C4AFF;
   text-shadow: 3px 3px 6px #4C4AFF;
   color: #ffffff;
-  background-color: #000000;
+  /*background-color: #000000;*/
+
 }
 
 h1 {
@@ -36,6 +44,11 @@ h1 {
 #message {
   font-size: 30px;
   font-family: 'Love Ya Like A Sister', cursive;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
 
 .button {
@@ -43,6 +56,26 @@ font-family: 'Love Ya Like A Sister', cursive;
 font-size: 25px;
 outline: none;
 background-color: #4C4AFF;
-
+transition:all 400ms ease;
+border-radius: 5px;
 }
+
+button:hover {
+  background: rgba(0,0,0,0);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 3px #3a7999;
+  transform: skew(-10deg);
+}
+
+.box:hover {
+  box-shadow: inset 0 0 0 3px;
+  border-color: #4C4AFF;
+  outline-color: #4C4AFF;
+}
+
+/*@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}*/
+
 
