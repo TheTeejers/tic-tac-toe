@@ -1,0 +1,12 @@
+
+body {
+   width: 550px;
+  margin: 650px auto;
+  text-align: center;
+  /*background-color: #0D0D2B;*/
+  background-image: url(../images/bees.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+

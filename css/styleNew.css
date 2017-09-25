@@ -11,9 +11,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
     2px 2px 0 #000;
 }
 
@@ -57,6 +57,15 @@ h1 {
     2px 2px 0 #000;*/
 }
 
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+span {
+  font-size: 16px;
+}
+
 .resetButton {
   margin-top: 75px;
 }
@@ -73,37 +82,20 @@ border-radius: 5px;
 }
 
 button:hover {
+  transition:all 200ms ease;
   background: rgba(0,0,0,0);
   color: #000000;
-  box-shadow: inset 0 0 0 3px #3a7999;
+  /*box-shadow: inset 0 0 0 3px #3a7999;*/
   transform: skew(-10deg);
 }
 
 .box:hover {
-  /*box-shadow: inset 3px;*/
-  /*border-color: #4C4AFF;*/
-  /*outline-color: #4C4AFF;*/
   transition:all 300ms ease;
   background-color: rgba(0,149,255, 0.25);
   background-size: cover;
   animation: bounce 0.25s;
   color:red;
 }
-
-
-/*@keyframes bounce {
-  0%, 20%, 60%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-
-  80% {
-    transform: translateY(-10px);
-  }
-}
-*/
 
 @keyframes bounce {
   0%, 100% {
@@ -112,19 +104,20 @@ button:hover {
   20% {
     transform: translateX(-2px);
   }
-
   40% {
     transform: translateY(-2px);
   }
-
   60% {
     transform: translateX(2px);
   }
-
   80% {
     transform: translateY(2px);
   }
 }
 
+#bees {
+  text-decoration: none;
+  margin-top: 50px;
+}
 
 
